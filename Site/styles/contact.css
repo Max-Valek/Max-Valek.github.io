@@ -1,0 +1,117 @@
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background: linear-gradient(to top, #86377b 20%, #27273c 80%); */
+    background: linear-gradient(-45deg, #222222, #1d1e22, #000000);
+	background-size: 400% 100%;
+	animation: gradient 10s ease infinite;
+	height: 100vh;
+}
+.contact > h1 {
+    color: white;
+}
+.form-container {
+    background: rgba(255,255,255,0.05);
+    height: 70vh;
+    width: 40vw;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+}
+.form {
+    background: #393f4d;
+    height: 90%;
+    width: 90%;
+    display: flex;
+    border-radius: 1rem;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 1rem;
+    color: white;
+}
+#fname {
+    margin-bottom: 1rem;
+    margin-top: 0.4rem;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    width: 90%;
+    background: transparent;
+    border: 1px solid #fede6a;
+}
+#lname {
+    margin-bottom: 1rem;
+    margin-top: 0.4rem;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    width: 90%;
+    background: transparent;
+    border: 1px solid #fede6a;
+    
+}
+#subject {
+    margin-bottom: 1rem;
+    margin-top: 0.4rem;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    width: 90%;
+    background: transparent;
+    border: 1px solid #fede6a;
+}
+#input-file {
+    margin-bottom: 1rem;
+    margin-top: 0.4rem;
+
+}
+#message {
+    margin-bottom: 1rem;
+    margin-top: 0.4rem;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    width: 90%;
+    height: 30%;
+    background: transparent;
+    border: 1px solid #fede6a;
+}
+#submitBtn {
+    margin-bottom: 1rem;
+    margin-top: 0.4rem;
+    margin-left: 30%;
+    width: 40%;
+    height: 8%;
+    background-color: var(--dark-grey);
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    transition: background-color 200ms, color 200ms;
+    cursor: pointer;
+}
+#submitBtn:hover {
+    background-color: var(--light-grey);
+    color: black;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@media (max-width: 750px) {
+    .form-container {
+        height: 70vh;
+        width: 80vw;
+    }
+    .contact > h1 {
+        margin-top: 8rem;
+    }
+}

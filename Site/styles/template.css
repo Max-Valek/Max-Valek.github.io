@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+/*  Global */
+* {
+  /* box-sizing: border-box; */
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comfortaa', sans-serif;
+  overflow: hidden;
+}
+*::-webkit-scrollbar {
+    display: none;
+}
+/* variables */
+:root {
+    --white: white;
+    --antique-white: #DFCFBE;
+    --light-grey: #333;
+    --dark-grey: #1d1f20;
+    --red: #ff3a22;
+    --text-color: #DFCFBE;
+    --cream: #EFE1CE;
+    --inkwell: #363945;
+    --ultimate-gray: #939597;
+    --dark-purple: #6200EE;
+    --light-purple: #BB86FC;
+    --black: #121212;
+    --silver: #c0c0c0;
+    --gold: #f2c83b;
+}
+.container {
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+section {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+}
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
