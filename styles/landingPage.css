@@ -73,14 +73,15 @@
     display: flex;
     justify-content: center;
     top: 65vh;
-    max-width: 60vw;
+    width: 85vw;
+    overflow: hidden;
     
     /* border: 1px solid white; */
 }
 .land-link {
     text-decoration: none;
     color: white;
-    margin: 0 2rem;
+    margin: 0 1rem;
     cursor: pointer;
     z-index: 10000;
     transition: color 300ms;
